@@ -172,7 +172,7 @@ footer {
 
 /* -- home page -- */
 #home-page {
-    background-image: url("../images/wallpaper-springflowers.jpg");
+    background-image: url("/images/wallpaper-springflowers.jpg");
     background-size: 100%;
 }
 
