@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CS50 Final Project - Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <header>
+    <h1>CS50 Final Project</h1>
+    <p>Mobile phone / tablet emulator with apps, with API integration.</p>
+  </header>
+  <main>
+    <div class="wrapper">
+        <div class="screen-wrap" id="trivia-app">
+            <div class="top-bar">
+                <span id="date" onload="currentDate()"></span>
+                <span id="clock" onload="currentTime()"></span>
+            </div>
+            <div class="main-content">
+                <div id="loadQuiz">
+                  <h2>Welcome to the Quiz App!</h2>
+                  <p>To start your 10 question quiz, choose the category and the level of difficulty on the next pages.</p>
+                  <button id="load-quiz">Load Quiz</button>
+                </div>
+                <div id="getCategory">
+                  <h2>Choose a Category:</h2>
+                  <button class="category-btns" value="9">General Knowledge</button>
+                  <button class="category-btns" value="10">Books</button>
+                  <button class="category-btns" value="11">Film</button>
+                  <button class="category-btns" value="12">Music</button>
+                  <button class="category-btns" value="14">Television</button>
+                  <button class="category-btns" value="15">Video Games</button>
+                  <button class="category-btns" value="21">Sports</button>
+                  <button class="category-btns" value="20">Mythology</button>
+                </div>
+                <div id="getDifficulty">
+                  <h2>Choose difficulty:</h2>
+                  <button class="difficulty-btns" value="easy">Easy</button>
+                  <button class="difficulty-btns" value="medium">Medium</button>
+                  <button class="difficulty-btns" value="hard">Hard</button>
+                </div>
+                <div id="startQuiz">
+                  <h2>Loading the quiz...</h2>
+                  <button id="start-quiz">Start Quiz</button>
+                </div>
+                <div id="quizTime">
+
+                </div>
+            </div>
+        </div>
+        <div class="home-bar">
+            <div class="home-btn">
+                <a href="index.html"><span><img src="images/home-button.png" alt="home page button"></span></a>
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <small>Built with HTML, CSS, JS & &hearts;<br>icons created by <a href="https://www.flaticon.com/">Flaticon</a></small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+  <script src="js/trivia.js"></script>
+</body>
+</html>

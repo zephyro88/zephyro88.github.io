@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CS50 Final Project - Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v2.0.0/modern-normalize.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+  <header>
+    <h1>CS50 Final Project</h1>
+    <p>Mobile phone / tablet emulator with apps, with API integration.</p>
+  </header>
+  <main>
+    <div class="wrapper">
+        <div class="screen-wrap" id="home-page">
+            <div class="top-bar">
+                <span id="date" onload="currentDate()"></span>
+                <span id="clock" onload="currentTime()"></span>
+            </div>
+            <div class="main-content">
+                <ul class="app-icons">
+                    <li><a href="weather.html"><img src="images/weather.png" alt="weather app icon"></a></li>
+                    <li><a href="dictionary.html"><img src="images/dictionary.png" alt="dictionary app icon"></a></li>
+                    <li><a href="trivia.html"><img src="images/quiz.png" alt="trivia app icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="home-bar">
+            <div class="home-btn">
+                <a href="index.html"><span><img src="images/home-button.png" alt="home page button"></span></a>
+            </div>
+        </div>
+    </div>
+  </main>
+  <footer>
+    <small>Built with HTML, CSS, JS & &hearts;<br>icons created by <a href="https://www.flaticon.com/">Flaticon</a></small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
