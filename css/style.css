@@ -1,0 +1,294 @@
+/* -- mobile phone only size (portrait) -- */
+@media screen and (max-width: 500px) {
+    .wrapper {
+        height: 100vh;
+        min-height: 100vh;
+    }
+
+    .screen-wrap {
+        min-height: 100vh;
+        float: none;
+    }
+
+    .main-content {
+        padding-bottom: 15vh;
+    }
+
+    .app-icons {
+        margin: 40px 0 0 30px;
+    }
+    .app-icons li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .home-bar {
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        min-height: 10vh;
+        width: 100vw;
+        border-top: 1px solid #757575;
+    }
+
+    .home-btn {
+        margin: 10px auto;
+        width: 60px;
+    }
+}
+
+/* -- tablet only size (landscape) -- */
+@media screen and (max-width: 1280px) {
+    header, footer {
+        display: none;
+    }
+    .wrapper {
+        height: 100vh;
+        min-height: 100vh;
+        border: none;
+    }
+}
+
+/* -- bigger than tablet, everything else -- */
+@media screen and (min-width: 501px) {
+    .wrapper {
+        max-width: 1280px;
+        height: 80vh;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    .screen-wrap {
+        width: 90%;
+        height: 100%;
+        float: left;
+    }
+
+    .main-content {
+        height: 486px;
+        overflow-y: auto;
+    }
+
+    .app-icons {
+        margin: 40px 60px;
+    }
+    .app-icons li {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .home-bar {
+        width: 10%;
+        height: 100%;
+        max-height: 100%;
+        float: left;
+        background: #fff;
+    }
+    
+    .home-btn {
+        position: absolute;
+        top: 45%;
+        margin-left: 2%;
+    }
+
+    .home-btn span {
+        padding: 15px;
+    }
+
+    #dictionary-app .main-content {
+        border-right: 1px solid #777;
+    }
+}
+
+/* -- bigger than tablet only -- */
+@media screen and (min-width: 1281px) {
+    .wrapper {
+        border: 15px outset #c0c0c0;
+        border-radius: 15px;
+    }
+}
+
+
+/* -- base template -- */
+header {
+    padding: 0 3vw;
+}
+header h1 {
+    display: inline-block;
+}
+header p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.top-bar {
+    background: rgba(0,0,0,.5);
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    font-size: 18px;
+}
+
+#date {
+    padding-right:10px;
+    margin-right: 5px;
+    border-right: 1px solid #fff;
+}
+
+.app-icons {
+    padding: 0;
+    list-style: none;
+}
+
+.app-icons li {
+    display: inline-block;
+    background: #24c0fd;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.home-btn {
+    width: 64px;
+}
+
+.home-btn span {
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+    display: block;
+    background-color: #fff;
+}
+
+.home-btn img {
+    width: 100%;
+}
+
+footer {
+    text-align: right;
+    padding: 0 5vw;
+    margin-top: 10px;
+}
+
+/* -- home page -- */
+#home-page {
+    background-image: url("../images/wallpaper-springflowers.jpg");
+    background-size: 100%;
+}
+
+/* -- weather app -- */
+#weather-app {
+    background: linear-gradient(rgb(1, 84, 192), rgb(0, 8, 122));
+}
+
+#weather-app .main-content {
+    padding-left: 30px;
+    padding-right: 30px;;
+}
+
+#weather-app h2 {
+    color: #fff;
+}
+
+#get-location {
+    display: none;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#weather-app #show {
+    background: rgba(255, 255, 255, 0.35);
+    height: 50vh;
+    text-align: center;
+    padding: 25px;
+    color: #fff;
+}
+
+#weather-app #show h3 {
+    font-size: 3em;
+}
+
+
+/* -- dictionary app -- */
+#dictionary-app .main-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#dictionary-app .main-content h2 {
+    color: #ff9900;
+}
+
+#dictionary-app input {
+    padding: 5px;
+}
+
+#dictionary-app button {
+    color: #ffffff;
+    background-color: #ff9900;
+    border: 3px solid #ff9900;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#dictionary-app #searched-word {
+    color: #ff9900;
+    border-top: 1px solid rgba(0,0,0,.2);
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+#dictionary-app #results p {
+    border-bottom: 1px solid #ff9900;
+    padding-bottom: 10px;
+}
+
+#dictionary-app #results p:last-child {
+    border: none;
+    padding-bottom: none;
+}
+
+#dictionary-app .partOfSpeech {
+    font-style: italic;
+}
+
+#dictionary-app li {
+    margin-bottom: 15px;
+}
+
+#dictionary-app .example {
+    display: block;
+    font-style: italic;
+    color: #5e5e5e;
+    margin-top: 5px;
+}
+
+/* -- trivia app -- */
+#trivia-app {
+    background: linear-gradient(rgb(224, 1, 224), rgb(122, 1, 192));
+    color: #fff;
+    text-align: center;
+}
+
+#trivia-app .main-content {
+    padding-top: 30px;
+}
+
+#trivia-app .main-content div {
+    display: none;
+}
+
+#trivia-app .main-content #loadQuiz {
+    display: block;
+}
+
+#trivia-app button {
+    color: #ffffff;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+}
